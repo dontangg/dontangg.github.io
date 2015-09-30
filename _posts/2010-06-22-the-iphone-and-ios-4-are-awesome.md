@@ -11,7 +11,7 @@ tags:
 - iOS
 ---
 
-![My iPhone Homescreen](http://blog.donwilson.net/wp-content/uploads/2010/06/IMG_0122-200x300.png)
+![My iPhone Homescreen]({{ site.baseurl }}/assets/ios4-homescreen.png)
 
 Mandi and I love our iPhones. The other day I heard a joke that I thought was funny because it's true.
 
@@ -37,8 +37,8 @@ an Android phone" ([read
 more](http://news.cnet.com/8301-17852_3-20002922-71.html)). I think that's
 awesome.
 
-I know that this solution isn't fool-proof and that there are ways around everything. However, I like seeing
-people do what they can to prevent it.
+I know that this solution isn't fool-proof and that there are ways around
+everything. However, I like seeing people do what they can to prevent it.
 
 ## 2. Apple strongly encourages and facilitates a quality, usable user experience
 
@@ -60,7 +60,7 @@ download. I continue to be impressed with the quality and consistency of my
 experience no matter what app I'm using.
 
 
-![App Store Icon](http://blog.donwilson.net/wp-content/uploads/2010/06/app_store_icon1-150x150.jpg)
+![App Store Icon]({{ site.baseurl }}/assets/app-store-icon.jpg)
 
 ## 3. Tons of great apps
   
