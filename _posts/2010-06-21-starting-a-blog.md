@@ -2,19 +2,10 @@
 title: Starting a Blog
 layout: post
 published: true
-author: Don Wilson
 date: '2010-06-21 06:05:06 -0600'
 categories:
 - Goals
 tags: []
-comments:
-- id: 2
-  author: Sara
-  author_email: sarabrown01@gmail.com
-  author_url: ''
-  date: '2010-06-29 14:08:50 -0600'
-  date_gmt: '2010-06-29 14:08:50 -0600'
-  content: Cool Blog Don!
 ---
 
 Lately, I've been interested in learning about people who are influential on the internet. (The most recent are David Heinemeier Hansson and Matt Mullenweg). These guys blog. It also just seems like a good thing to do. It's a way to be a little more social and it's also like keeping a journal. At the end of a year, I can go somewhere like <a title="Make your own book" href="http://www.blurb.com" target="_blank">blurb.com</a> and create a book out of my posts. So, I'm going to give it a shot.
