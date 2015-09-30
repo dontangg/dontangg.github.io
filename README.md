@@ -1,3 +1,3 @@
 
-The blog you can find [here](http://blog.donwilson.net)
+The blog you can find at [http://blog.donwilson.net](http://blog.donwilson.net).
 
