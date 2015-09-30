@@ -1,0 +1,358 @@
+---
+layout: post
+status: publish
+published: true
+title: Deploying A Rails App To Rackspace Cloud Servers On Ubuntu Using Nginx and
+  Unicorn
+author:
+  display_name: dontangg
+  login: dontangg
+  email: robert.don.wilson@gmail.com
+  url: ''
+author_login: dontangg
+author_email: robert.don.wilson@gmail.com
+excerpt: "I recently setup a Rails server on Ubuntu using Nginx and Unicorn and a
+  database running on the same server using Postgres. I also used rbenv and ruby-build
+  for ruby. I had to look up a lot of information to get this all working. I just
+  wanted to consolidate everything I did into one place. Hopefully, all this can help
+  someone else.\r\n\r\n"
+wordpress_id: 283
+wordpress_url: http://blog.donwilson.net/?p=283
+date: '2012-04-04 19:00:02 -0600'
+date_gmt: '2012-04-05 01:00:02 -0600'
+categories:
+- Programming
+tags:
+- envelopes
+- Ruby
+- Rails
+- deployment
+- capistrano
+- nginx
+- unicorn
+comments:
+- id: 440
+  author: Steve
+  author_email: p.witty@gmail.com
+  author_url: http://betonstudios.com
+  date: '2012-05-07 01:34:00 -0600'
+  date_gmt: '2012-05-07 07:34:00 -0600'
+  content: "Cool post!\r\n\r\nA few comments&#47;thoughts:\r\n\r\n1. I still like
+    RVM, and am used to it and see no reason to switch to rbenv.  That said, I had
+    trouble (and am still having trouble) with Ubuntu + OpenSSL + Ruby 1.9.2 + RVM.
+    \ I'm not sure which aspect is to blame here, but all I know is I built this same
+    server on Gentoo a year ago and didn't have these OpenSSL issues.\r\n2. I like
+    thin over unicorn, as it allows for asynchronous IO.  Although, to be fair, I'm
+    not utilizing it much yet, so at this point I don' think it matters too much what
+    server I use for my Rails app.\r\n\r\nI have been working hard on getting this
+    dang Ubuntu box up and running.  I think part of my frustration has actually stemmed
+    from selecting the smallest (256mb) size server.  It might be an interesting idea
+    to choose a bigger instance at first, then after you're done installing all the
+    prerequisites, re-size it to a smaller instance and then save an image. I think
+    that's what I'll do next time.\r\n\r\nI also thing I'll go back to Gentoo next
+    time, or even (God help me), CentOS."
+- id: 447
+  author: stephen murdoch
+  author_email: stephenjamesmurdoch@gmail.com
+  author_url: ''
+  date: '2012-06-20 16:19:31 -0600'
+  date_gmt: '2012-06-20 22:19:31 -0600'
+  content: "Thanks, I'm about to deploy to rackspace and plan to follow your instructions.\r\n\r\nDoes
+    rackspace give you information regarding how much memory your instance is using?"
+- id: 448
+  author: dontangg
+  author_email: robert.don.wilson@gmail.com
+  author_url: ''
+  date: '2012-06-20 16:42:56 -0600'
+  date_gmt: '2012-06-20 22:42:56 -0600'
+  content: "Yes, Rackspace tells you how much space you're using.  I haven't look
+    hard in the website to find it, but I know you can see it when you ssh into your
+    server.  As part of the welcome message, it gives you a bunch of stats like, number
+    of running processes, hard disk usage, ram usage, etc.\r\n\r\nI watched Ryan Bates'
+    Railscast after I posted this and found it very beneficial. I highly recommend
+    it. You can find it here: http:&#47;&#47;railscasts.com&#47;episodes&#47;335-deploying-to-a-vps."
+- id: 452
+  author: Adi Suryadi
+  author_email: adiluhung@gmail.com
+  author_url: http://www.facebook.com/adiluhung
+  date: '2012-07-26 17:59:16 -0600'
+  date_gmt: '2012-07-26 23:59:16 -0600'
+  content: "Thanks for the post, i absolutely will try this configuration later, while
+    still on development.\r\nNow i'm also on rackspace's 256mb Debian 6, RVM + passenger
+    + nginx + mysql."
+- id: 453
+  author: nofx1717Jesse
+  author_email: jesseneal@me.com
+  author_url: http://gravatar.com/nofx1717
+  date: '2012-09-19 10:56:06 -0600'
+  date_gmt: '2012-09-19 16:56:06 -0600'
+  content: I have a just a few questions. If I set my nginx, and unicorn files to
+    the Rackspace provided IP instead of port 80 I can load the static pages from
+    my rails app If I change it to port 80 and try to go to the rackspace provided
+    IP is just see bad gateway message from nginx, would you be able to give me some
+    guidance?
+- id: 454
+  author: dontangg
+  author_email: robert.don.wilson@gmail.com
+  author_url: ''
+  date: '2012-09-28 22:33:18 -0600'
+  date_gmt: '2012-09-29 04:33:18 -0600'
+  content: Sorry for the late reply.  I just got back from a trip to Disneyland with
+    my family.  I don't consider myself an expert in server setup&#47;maintenance.
+    At this point it would take me a while to remember everything. Part of the reason
+    for this post was for me to be able to remind myself what I did. I don't think
+    that I can be much help with the time I have. I definitely recommend the Railscasts
+    that I mentioned in the post on setting up a VPS. He does a great job of explaining
+    the details. IMO, the one video itself is well worth the $9 it costs for a membership
+    for a month.
+- id: 502
+  author: James Stone
+  author_email: jamesmanofstone@gmail.com
+  author_url: http://www.jamesjamesjames.com
+  date: '2012-11-24 01:19:37 -0700'
+  date_gmt: '2012-11-24 08:19:37 -0700'
+  content: Awesome post! What version of ubuntu are you running on RackSpace? Is it
+    a 1st gen or next gen cloud server?
+- id: 503
+  author: dontangg
+  author_email: robert.don.wilson@gmail.com
+  author_url: ''
+  date: '2012-11-24 01:29:46 -0700'
+  date_gmt: '2012-11-24 08:29:46 -0700'
+  content: I'm glad you liked it! It is a 1st gen cloud server. They hadn't announced
+    the next gen ones when I started. I'm running Ubuntu 11.10.
+- id: 539
+  author: Bijan
+  author_email: bijan.pourriahi@gmail.com
+  author_url: ''
+  date: '2013-02-19 18:12:00 -0700'
+  date_gmt: '2013-02-20 01:12:00 -0700'
+  content: Terrific post. Thank you! Got it up and running without issue.
+---
+<p>I recently setup a Rails server on Ubuntu using Nginx and Unicorn and a database running on the same server using Postgres. I also used rbenv and ruby-build for ruby. I had to look up a lot of information to get this all working. I just wanted to consolidate everything I did into one place. Hopefully, all this can help someone else.</p>
+<p><a id="more"></a><a id="more-283"></a><br />
+Here are some links to the different parts of this post:</p>
+<ul>
+<li><a href="http:&#47;&#47;blog.donwilson.net&#47;2012&#47;04&#47;deploying-a-rails-app-to-rackspace-cloud-servers-using-nginx-and-unicorn&#47;#why-these">Why use these technologies?<&#47;a><&#47;li>
+<li><a href="http:&#47;&#47;blog.donwilson.net&#47;2012&#47;04&#47;deploying-a-rails-app-to-rackspace-cloud-servers-using-nginx-and-unicorn&#47;?page=2">The server<&#47;a><&#47;li>
+<li><a href="http:&#47;&#47;blog.donwilson.net&#47;2012&#47;04&#47;deploying-a-rails-app-to-rackspace-cloud-servers-using-nginx-and-unicorn&#47;?page=3">PostgreSQL<&#47;a><&#47;li>
+<li><a href="http:&#47;&#47;blog.donwilson.net&#47;2012&#47;04&#47;deploying-a-rails-app-to-rackspace-cloud-servers-using-nginx-and-unicorn&#47;?page=4">Nginx<&#47;a><&#47;li>
+<li><a href="http:&#47;&#47;blog.donwilson.net&#47;2012&#47;04&#47;deploying-a-rails-app-to-rackspace-cloud-servers-using-nginx-and-unicorn&#47;?page=5">Unicorn<&#47;a><&#47;li>
+<li><a href="http:&#47;&#47;blog.donwilson.net&#47;2012&#47;04&#47;deploying-a-rails-app-to-rackspace-cloud-servers-using-nginx-and-unicorn&#47;?page=6">Capistrano<&#47;a><&#47;li><br />
+<&#47;ul></p>
+<p>Here are some resources I used to get everything setup the way I wanted:</p>
+<ul>
+<li><a href="http:&#47;&#47;sirupsen.com&#47;setting-up-unicorn-with-nginx&#47;">Setting up Unicorn with Nginx<&#47;a><&#47;li>
+<li><a href="https:&#47;&#47;help.ubuntu.com&#47;community&#47;PostgreSQL">Setting up PostgreSQL on Ubuntu<&#47;a><&#47;li>
+<li><a href="http:&#47;&#47;ariejan.net&#47;2011&#47;09&#47;14&#47;lighting-fast-zero-downtime-deployments-with-git-capistrano-nginx-and-unicorn">Lighting fast, zero-downtime deployments with git, capistrano, nginx and Unicorn<&#47;a><&#47;li><br />
+<&#47;ul></p>
+<p>I took my approach from many different places and I'll explain why I did what I did.</p>
+<p><strong>Update<&#47;strong> - I have since watched a few Railscasts that are very well done and explain most of the same concepts. There are several things that he recommends doing that I will definitely do. He is charging money to see those episodes ($9&#47;month), so I would feel a little guilty posting what I learned here.</p>
+<ul>
+<li><a href="http:&#47;&#47;railscasts.com&#47;episodes&#47;335-deploying-to-a-vps">Deploying To A VPS<&#47;a><&#47;li>
+<li><a href="http:&#47;&#47;railscasts.com&#47;episodes&#47;293-nginx-unicorn">Nginx & Unicorn<&#47;a><&#47;li>
+<li><a href="http:&#47;&#47;railscasts.com&#47;episodes&#47;337-capistrano-recipes">Capistrano Recipes<&#47;a><&#47;li><br />
+<&#47;ul></p>
+<h3 id='why-these'>Why use these technologies?<&#47;h3></p>
+<h4>Hosting<&#47;h4></p>
+<p>Originally, I wanted to host my website on <strong>Heroku<&#47;strong>. Heroku is easy, awesome, and really simple. One web dyno is free and it can scale really easily. For the foreseeable future, however, I will have very low traffic and I want it to be as cheap as possible.</p>
+<p>My problem with Heroku came when I realized that I needed more than 5MB of database space. The next tier up gives me 20GB and costs $15&#47;month. This is way more space than I need and costs a lot more than I want to pay.</p>
+<p>So, I started looking at VPS hosting since I can get a cheap VPS and have more than 5MB of space for my database, plus I can use it to run jobs if I want, etc. I looked at the cheapest offered solutions at Linode, Dreamhhost, MediaTemple, Amazon, and Rackspace. Rackspace beats them all with 256MB of RAM and 10GB Disk for $11&#47;month + $0.18&#47;GB of bandwidth. I highly doubt that I'll even use 1GB of bandwidth. Plus, if I do need to scale, it will be really easy to do it with Rackspace Cloud Servers.</p>
+<h4>Web Framework<&#47;h4></p>
+<p>Honestly, my main reason for doing my site in Rails is because I love Ruby and Rails is fun to work in.</p>
+<h4>Http Server<&#47;h4></p>
+<p>My reasons are better stated by others:</p>
+<ul>
+<li><a href="http:&#47;&#47;cmelbye.github.com&#47;2009&#47;10&#47;04&#47;thin-vs-unicorn.html">Thin vs. Unicorn<&#47;a><&#47;li>
+<li><a href="https:&#47;&#47;github.com&#47;blog&#47;517-unicorn">Unicorn!<&#47;a><&#47;li>
+<li><a href="http:&#47;&#47;labs.revelationglobal.com&#47;2009&#47;10&#47;06&#47;mongrel_passenger_unicorn.html">Mongrel vs. Passenger vs. Unicorn<&#47;a><&#47;li><br />
+<&#47;ul></p>
+<p>Since this is for a low traffic site, I went on the word of others. If I was expecting a lot of traffic, I probably would have done more research and some of my own benchmarks. That said, I do feel pretty confident in this setup even though I didn't do that. Let's get started!</p>
+<p><!--nextpage--></p>
+<h3 id='configure-server'>Configure the server<&#47;h3></p>
+<h4>Get a server with Ubuntu<&#47;h4></p>
+<p>With Rackspace Cloud Servers, this is very easy. Login to Rackspace, choose Cloud Servers under Hosting, click Add Server, and choose your OS. I chose Ubuntu 11.10 (Oneiric Ocelot). In just a minute, you'll have an IP address and root credentials that you can use for ssh.</p>
+<h4>Install Stuff<&#47;h4></p>
+<p>I did everything using ssh. If you've never done this, Google it and learn the best way to do it on your platform.</p>
+<p>When you first get your server, it is pretty bare. Let's get some stuff installed. First, you'll want to update apt-get so that it installs the latest versions of everything:</p>
+<p><code>
+<pre>$ apt-get update<&#47;pre><&#47;code></p>
+<p>Then, upgrade all the currently installed packages (-y means say yes to all prompts):</p>
+<p><code>
+<pre>$ apt-get upgrade -y<&#47;pre><&#47;code></p>
+<p>Now, we'll install new stuff:</p>
+<p><code>
+<pre>
+$ apt-get install git-core, build-essentials, curl, zlib1g-dev, \<br />
+    libxml2-dev, libxslt1-dev, openssl, nodejs, postgresql, libpq-dev, \<br />
+    nginx<br />
+<&#47;pre><&#47;code></p>
+<p>I installed nodejs, so that I'd have a javascript runtime to compile my static assets. The postgresql packages is to run a PostgreSQL server on the machine. The ligpq-dev is so that my pg ruby gem can connect to the PostgreSQL server. The git-core package is so that I can run a <code>git pull<&#47;code> command to update the code on the server. Everything else is a pretty fundamental need.</p>
+<p>Since I used rbenv and ruby-build for ruby, I didn't install any ruby package here. Instead, I just made sure that all ruby's dependencies were installed.</p>
+<p><code>
+<pre>$ apt-get build-dep ruby1.9.3<&#47;pre><&#47;code></p>
+<h4>Create a new user<&#47;h4></p>
+<p>Now, we need to create a user for our app to run as. I called mine <code>app_user<&#47;code>.</p>
+<p><code>
+<pre>$ useradd -m -g staff app_user<&#47;pre><&#47;code></p>
+<p>The -m option will create the new user's home directory (&#47;home&#47;app_user). The -g option tells it which group to add the user to (staff).</p>
+<p>Set your new user's password.</p>
+<p><code>
+<pre>$ passwd app_user<&#47;pre><&#47;code></p>
+<p>To allow app_user to execute commands with super-user privileges, you need to add him to the sudoers file located at &#47;etc&#47;sudoers.</p>
+<p><code>
+<pre>
+# &#47;etc&#47;sudoers<br />
+app_user ALL=(ALL) ALL<br />
+<&#47;pre><&#47;code></p>
+<p>Now you're set to log out as root and log back in as app_user. If I specify any commands that it says you don't have rights to access, just put <code>sudo<&#47;code> in front of the command, enter app_user's password and it will let you.</p>
+<h4>Ruby<&#47;h4></p>
+<p>I really like <a href="https:&#47;&#47;github.com&#47;sstephenson&#47;rbenv">rbenv<&#47;a>. These steps are mostly copied from its homepage, but slightly simplified for my use case.</p>
+<p>Clone rbenv into ~&#47;.rbenv.</p>
+<p><code>
+<pre>
+$ cd<br />
+$ git clone git:&#47;&#47;github.com&#47;sstephenson&#47;rbenv.git .rbenv<br />
+<&#47;pre><&#47;code></p>
+<p>Add ~&#47;.rbenv&#47;bin to your $PATH for access to the rbenv command-line utility.</p>
+<p><code>
+<pre>$ echo 'export PATH="$HOME&#47;.rbenv&#47;bin:$PATH"' >> ~&#47;.bash_profile<&#47;pre><&#47;code></p>
+<p>Add rbenv init to your shell to enable shims and autocompletion.</p>
+<p><code>
+<pre>$ echo 'eval "$(rbenv init -)"' >> ~&#47;.bash_profile<&#47;pre><&#47;code></p>
+<p>Restart your shell so the path changes take effect. You can now begin using rbenv.</p>
+<p><code>
+<pre>$ exec $SHELL<&#47;pre><&#47;code></p>
+<p>Now, we'll install ruby-build that makes it really simple to install ruby.</p>
+<p><code>
+<pre>
+$ mkdir -p ~&#47;.rbenv&#47;plugins<br />
+$ cd ~&#47;.rbenv&#47;plugins<br />
+$ git clone git:&#47;&#47;github.com&#47;sstephenson&#47;ruby-build.git<br />
+<&#47;pre><&#47;code></p>
+<p><code>
+<pre>$ rbenv install 1.9.3-p125<&#47;pre><&#47;code></p>
+<p>Set the global version of ruby to 1.9.3.</p>
+<p><code>
+<pre>$ rbenv global 1.9.3-p125<&#47;pre><&#47;code></p>
+<p>Rebuild the shim binaries. You should do this any time you install a new Ruby binary (for example, when installing a new Ruby version, or when installing a gem that provides a binary).</p>
+<p><code>
+<pre>$ rbenv rehash<&#47;pre><&#47;code></p>
+<p>We're done installing ruby. Let's add some reasonable defaults for installing ruby gems.</p>
+<p><code>
+<pre>
+# ~&#47;.gemrc<br />
+---<br />
+:update_sources: true<br />
+:verbose: true<br />
+:buld_threshold: 1000<br />
+:backtrace: false<br />
+:benchmark: false<br />
+gem: --no-ri --no-rdoc<br />
+<&#47;pre><&#47;code></p>
+<p>Now let's just install a couple ruby gems that will allow us to use capistrano later.</p>
+<p><code>
+<pre>
+$ gem install rake<br />
+$ gem install bundler<br />
+$ rbenv rehash<br />
+<&#47;pre><&#47;code></p>
+<p><!--nextpage--></p>
+<h3>PostgreSQL<&#47;h3></p>
+<h4>Setup the PostgreSQL server<&#47;h4></p>
+<p>Since I'm installing the web app on the same server as the database, I was able to take advantage of a cool feature in PostgreSQL: ident sameuser authentication. Basically, it allows my application to not have to specify a password. To use this, first we need to create a user in PostgreSQL with the same username.</p>
+<p><code>
+<pre>$ sudo -u postgres createuser --superuser $USER<&#47;pre><&#47;code></p>
+<p>Then, give your new PostgreSQL user a password:</p>
+<p><code>
+<pre>
+# Run the psql command as the postgres user<br />
+$ sudo -u postgres psql<br />
+postgres=# \password app_user<br />
+# Type ctrl-d to exit psql<br />
+<&#47;pre><&#47;code></p>
+<p>Now, you could make it even easier and not even have to specify a database name if you create a database with the same name as your user, but I didn't do that. I created a database with the same name as my app.</p>
+<p><code>
+<pre>
+$ createdb my_app_name<br />
+<&#47;pre><&#47;code></p>
+<p>You should be done setting up the PostgreSQL server. If you run into any issues, try looking <a href="https:&#47;&#47;help.ubuntu.com&#47;community&#47;PostgreSQL">here<&#47;a>.</p>
+<h4>Configure Rails to talk to PostgreSQL<&#47;h4></p>
+<p>Make sure that you have the pg gem in your Gemfile:</p>
+<p><code>
+<pre>
+# Gemfile<br />
+gem 'pg', group: :production<br />
+<&#47;pre><&#47;code></p>
+<p>Add this to your database.yml file:</p>
+<p><code>
+<pre>
+# config&#47;database.yml<br />
+production:<br />
+  adapter: postgresql<br />
+  database: my_app_name<br />
+  pool: 5<br />
+  timeout: 5000<br />
+<&#47;pre><&#47;code></p>
+<p><!--nextpage--></p>
+<h3>Nginx<&#47;h3></p>
+<p>I pretty much copied my configuration from <a href="http:&#47;&#47;ariejan.net&#47;2011&#47;09&#47;14&#47;lighting-fast-zero-downtime-deployments-with-git-capistrano-nginx-and-unicorn">Ariejan de Vroom<&#47;a> with some changes for Rails 3.1 assets.</p>
+<p>We just need to edit two files.  Make sure that you replace my_app_name with your app's name.</p>
+<p>[gist id=2303555]</p>
+<p>Now, start nginx.</p>
+<p><code>
+<pre>$ sudo nginx<&#47;pre><&#47;code></p>
+<p><!--nextpage--></p>
+<h3>Unicorn<&#47;h3></p>
+<p>Add unicorn to your Gemfile:</p>
+<p><code>
+<pre>
+# Gemfile<br />
+gem "unicorn"<br />
+<&#47;pre><&#47;code></p>
+<p>Add this file to your rails app.  I pretty much copied this from <a href="http:&#47;&#47;ariejan.net&#47;2011&#47;09&#47;14&#47;lighting-fast-zero-downtime-deployments-with-git-capistrano-nginx-and-unicorn">Ariejan de Vroom<&#47;a> and <a href="https:&#47;&#47;github.com&#47;blog&#47;517-unicorn">GitHub<&#47;a>.</p>
+<p>[gist id=2303638]</p>
+<p><!--nextpage--></p>
+<h3>Capistrano<&#47;h3></p>
+<p>This is a must-have since I wasn't going with Heroku. You can read more about configuring Capistrano <a href="https:&#47;&#47;github.com&#47;capistrano&#47;capistrano&#47;wiki&#47;2.x-From-The-Beginning">here<&#47;a>. First, you'll need the capistrano gem on your development box (not the server). I put it in my Gemfile in my development group, then run capify.</p>
+<p><code>
+<pre>
+$ gem install capistrano<br />
+$ capify .<br />
+<&#47;pre><&#47;code></p>
+<p>Open up your Capfile and uncomment the assets line</p>
+<p><code>
+<pre>
+# Capfile<br />
+load 'deploy'<br />
+load 'deploy&#47;assets' # Using Rails' asset pipeline<br />
+Dir['vendor&#47;gems&#47;*&#47;recipes&#47;*.rb','vendor&#47;plugins&#47;*&#47;recipes&#47;*.rb'].each { |plugin| load(plugin) }<br />
+load 'config&#47;deploy' # Remove this line to skip loading any of the default tasks<br />
+<&#47;pre><&#47;code></p>
+<p>Now we need to modify the config&#47;deploy.rb file to setup our tasks.</p>
+<p>[gist id=2304004]</p>
+<p>I overrode the assets:precompile task so that it only precompiles them if they changed. The comments really pretty much describe everything in there.</p>
+<h4>Our first deploy<&#47;h4></p>
+<p>Run these capistrano tasks and resolve any errors that you may get. (There should be any).</p>
+<p><code>
+<pre>
+# Create directories for your app, etc<br />
+$ cap deploy:setup<br />
+# Check to make sure everything is ready to go<br />
+$ cap deploy:check<br />
+# Deploy your code<br />
+$ cap deploy:update<br />
+<&#47;pre><&#47;code></p>
+<p>SSH into the server and run this (You can do this part with Capistrano. I didn't.)</p>
+<p><code>
+<pre>
+# load the schema into the database<br />
+$ rake RAILS_ENV=production db:schema:load<br />
+# see if the application can start<br />
+$ bundle exec rails c production<br />
+<&#47;pre><&#47;code></p>
+<p>If your application started up, you're set to go. From now on, to deploy you can just push your code changes to GitHub and run cap deploy and you're set!</p>
+<h4>Thoughts<&#47;h4></p>
+<p>I'm really happy with this setup. My website is pretty fast. Pages consistently load in less than 400ms. It's amazing to me how it can be so fast running on 256MB of RAM.</p>
+<p>This was my first time deploying a website like this. I know that I'll learn more and probably make changes as I go. I'll keep this post up to date with what I have learned. If you have suggestions or questions, feel free to ask.</p>
+<p>At some point, I'll probably configure upstart to monitor my application. I'll use an ssl certificate. I'll probably also use this same server to host other websites. I'm curious to see what effect it will have if I tweak some of the settings like the number of unicorn workers, etc. It would be fun to test that and find the right number.</p>
