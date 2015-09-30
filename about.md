@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+####**_My name is <span style='color:#093'>Don</span>. I live in Utah. I’m 33 years old._**
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I’m a software engineer for Ancestry.com. I have always enjoyed computers. When I was four years old, I played Dark Castle on our Mac. When I was ten I made a computer game using HyperCard. In High School I made several games and programs for my TI-85 calculator. I graduated in Bioinformatics. These days, I love everything to do with developing and designing for the web and native mobile apps.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Even though I’m kind of a computer geek, I have a wide variety of other interests. I’m a big fan of college football. I play the piano. I enjoy playing indoor soccer, racquetball, and many other sports.
+
+I never have been good at writing and I’ve never been much of a blogger, but I see value in writing and sharing my thoughts and opinions. I’m hoping that I’ll enjoy this.  We’ll see!
