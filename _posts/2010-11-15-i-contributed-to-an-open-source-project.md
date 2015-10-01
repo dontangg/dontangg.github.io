@@ -132,7 +132,7 @@ run the tests, first I had to make sure that I had all the gems I needed. This
 is easy now with bundler. Make sure you have bundler.
 
 {% highlight bash %}
-$ gem install bundler<br />
+$ gem install bundler
 {% endhighlight %}
 
 Then, to install all the needed gems:</p>
