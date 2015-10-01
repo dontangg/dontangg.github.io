@@ -33,9 +33,8 @@ them. I'll just talk about why I love my phone.
 Earlier this year, the iPhone App Store started seeing more and more 'porn' apps
 enter into the store and make their way to the top 20 lists.  Then, Apple banned
 over 6,000 apps and Steve Jobs came out and said, "Folks who want porn can buy
-an Android phone" ([read
-more](http://news.cnet.com/8301-17852_3-20002922-71.html)). I think that's
-awesome.
+an Android phone" ([read more](http://news.cnet.com/8301-17852_3-20002922-71.html)).
+I think that's awesome.
 
 I know that this solution isn't fool-proof and that there are ways around
 everything. However, I like seeing people do what they can to prevent it.
@@ -53,7 +52,7 @@ agree with their decisions, it is clear that they are not afraid to make radical
 products to achieve their goals. They insist on only manufacturing a mouse that
 has only one button. Why? Because they think that user interfaces that require
 the use of a right-click are less usable.
-  
+
 I have noticed that all my iPhone apps generally follow the standards set by
 Apple, which provides a consistent, easy-to-use experience in every app that I
 download. I continue to be impressed with the quality and consistency of my
@@ -63,11 +62,11 @@ experience no matter what app I'm using.
 ![App Store Icon]({{ site.baseurl }}/assets/app-store-icon.jpg)
 
 ## 3. Tons of great apps
-  
+
 The apps that I can get on my phone make up a large part of why I love my phone.
 The apps and features that come with the phone are great, but the rest of the
 apps you can get really make it awesome.
-  
+
 ### The app store
 
 It is so easy to browse the app store to find the app that you want. Everything
@@ -85,7 +84,7 @@ call them.
 
 ### WootWatch
 
-I have always thought that [Woot](http://www.woot.com/ was a great site for
+I have always thought that [Woot](http://www.woot.com) was a great site for
 great deals, but I didn't check the site often until I got this app on my phone.
 Man, they have some really great deals! It's so easy to check what the Woot of
 the Day is.
@@ -127,8 +126,7 @@ I struggled with this for a long time. I tried out several other solutions, and
 I just couldn't find an app that I liked that would do things they way that I
 like to do them.
 
-I really like the [GTD (Getting Things
-Done)](http://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280)
+I really like the [GTD (Getting Things Done)](http://www.amazon.com/Getting-Things-Done-Stress-Free-Productivity/dp/0142000280)
 system. The basic idea is that you get everything out of your head by just
 writing it down and you put all of this stuff into your "inbox." Then, you sort
 through your inbox and decide what the very next action on that is. You create
