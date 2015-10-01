@@ -69,7 +69,7 @@ vegetables. Yuck!
 
 Here is a little BASIC. Kind of nostalgic...
 
-```vb
+{% highlight basic %}
 INPUT "What is your name: ", UserName$
 PRINT "Hello "; UserName$
 DO
@@ -82,7 +82,7 @@ DO
   Answer$ = LEFT$(Answer$, 1)
 LOOP WHILE UCASE$(Answer$) = "Y"
 PRINT "Goodbye "; UserName$
-```
+{% endhighlight %}
 
 For my math classes in Junior High and High School I had a TI-85 and I created
 some games on my calculator. I don't know the name of the language used on the
