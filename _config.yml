@@ -2,8 +2,8 @@
 title: Don Wilson
 email: your-email@domain.com
 description: Things Don Wilson said.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "http://blog.donwilson.net" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://donwilson.net" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title.html
 author: Don Wilson
 twitter_username: dontangg
