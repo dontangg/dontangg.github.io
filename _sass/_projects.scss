@@ -1,13 +1,44 @@
 
 .image-gallery {
   list-style: none;
-  margin: 0 0 $spacing-unit;
+  margin: 0;
+  overflow-x: scroll;
   white-space: nowrap;
   width: 100%;
-  overflow-x: scroll;
 
   li {
     display: inline-block;
+  }
+
+  &:after {
+    content: '';
+    width: 50px;
+    display: inline-block;
+  }
+}
+
+.image-gallery-wrap {
+  width: 100%;
+  margin: 0 0 $spacing-unit;
+  position: relative;
+
+  &:before {
+  //.right-overlay {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;0+0,1+99 */
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0.7))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,0.7) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(255,255,255,0) 0%, rgba(255,255,255,0.7) 100%); /* W3C */
+
+    bottom: 0;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    z-index: 1;
   }
 }
 

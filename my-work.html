@@ -83,10 +83,12 @@ projects:
 
   <p>{{ project.description | replace:'new-paragraph','</p><p>' }}</p>
 
-  <ul class="image-gallery">
-    {% for image in project.images %}
-      <li><a href="{{ site.baseurl }}/assets/projects/{{ image }}"><img height="281" src="{{ site.baseurl }}/assets/projects/{{ image }}" /></a></li>
-    {% endfor %}
-  </ul>
+  <div class="image-gallery-wrap">
+    <ul class="image-gallery">
+      {% for image in project.images %}
+        <li><a href="{{ site.baseurl }}/assets/projects/{{ image }}"><img height="281" src="{{ site.baseurl }}/assets/projects/{{ image }}" /></a></li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endfor %}
 
