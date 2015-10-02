@@ -1,0 +1,92 @@
+---
+layout: page
+title: My Work
+permalink: /my-work/
+projects:
+  -
+    name: Blackbird!
+    date: '2012-09-28'
+    description: >
+      Play this classic card game similar to ROOK® on
+      <a href="https://itunes.apple.com/us/app/blackbird!/id563960217?ls=1&mt=8">iOS</a>, or
+      <a href="https://play.google.com/store/apps/details?id=net.donwilson.blackbird">Android</a>.
+
+      new-paragraph
+
+      <em><small>*This is not in any way endorsed by or affiliated with Hasbro, Inc. ROOK® is a
+      registered trademark of Hasbro, Inc.</small></em>
+    images:
+      - blackbird/menu.jpg
+      - blackbird/bidding.jpg
+      - blackbird/playing.jpg
+      - blackbird/round-over.jpg
+      - blackbird/rule-set.jpg
+  -
+    name: Google Charts – Zooming and Scrolling
+    date: '2009-12-14'
+    description: >
+      Create your own Google Chart using their chart API and this jQuery plugin will
+      transform it into a zoomable scrollable chart!
+      <a href="http://codecanyon.net/item/google-chart-scrollerzoomer/full_screen_preview/71423?ref=dontangg">View on CodeCanyon</a>.
+    images:
+      - gchart.png
+  -
+    name: Simple Colorful Portfolio
+    date: '2008-10-08'
+    description: >
+      This website template is a creative colorful single-page portfolio made
+      using the javascript library jQuery. Good for developers, photographers,
+      graphic designers, etc.  It comes with 3 different styles with differing
+      color schemes.
+      <a href="http://themeforest.net/item/simple-colorful-portfolio/19200?ref=dontangg">View on ThemeForest</a>.
+    images:
+      - simple-portfolio/screen-1.jpg
+      - simple-portfolio/screen-2.jpg
+      - simple-portfolio/screen-3.jpg
+      - simple-portfolio/screen-4.jpg
+      - simple-portfolio/screen-5.jpg
+  -
+    name: 30 Meals In One Day Website
+    date: '2007-09-22'
+    description: >
+      I helped design the look of some pages on this website, but I primarily
+      worked on making the shopping cart work.  After the client wanted more
+      flexibility to edit the pages, I ported the website over to WordPress so
+      that they now manage all the content on the site via the WordPress admin
+    images:
+      - 30-meals/homepage.png
+      - 30-meals/product.png
+      - 30-meals/recipes.png
+      - 30-meals/testimonials.png
+  -
+    name: Pleasant Grove Library Website
+    date: '2007-03-18'
+    description: >
+      I used xajax to build a simple content managment system.  When the
+      administrators are logged in, they can just click edit next to any entry
+      and all of the text changes to editable fields.  They can then click save,
+      and everything is saved and it goes back to a non-editable view. This same
+      system also controls when posts should be displayed as well as
+      program/class registrations.
+    images:
+      - library/library-1.jpg
+      - library/library-2.jpg
+      - library/library-3.jpg
+      - library/library-4.jpg
+---
+
+{% for project in page.projects %}
+
+  <h2>{{ project.name }}</h2>
+
+  <div class="project-meta">Completed {{ project.date | date: "%B %-d, %Y" }}</div>
+
+  <p>{{ project.description | replace:'new-paragraph','</p><p>' }}</p>
+
+  <ul class="image-gallery">
+    {% for image in project.images %}
+      <li><a href="{{ site.baseurl }}/assets/projects/{{ image }}"><img height="281" src="{{ site.baseurl }}/assets/projects/{{ image }}" /></a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+

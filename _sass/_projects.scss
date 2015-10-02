@@ -1,0 +1,22 @@
+
+.image-gallery {
+  list-style: none;
+  margin: 0 0 $spacing-unit;
+  white-space: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.project-meta {
+  color: $grey-color;
+  font-size: $small-font-size;
+  position: relative;
+  top: -20px;
+  height: 0;
+  margin-bottom: 10px;
+}
+
