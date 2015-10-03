@@ -12,3 +12,7 @@ Even though I’m kind of a computer geek, I have a wide variety of other intere
 
 I never have been good at writing and I’ve never been much of a blogger, but I see value in writing and sharing my thoughts and opinions. I’m hoping that I’ll enjoy this.  We’ll see!
 
+<a href="http://stackoverflow.com/users/543743/dontangg">
+<img src="http://stackoverflow.com/users/flair/543743.png" width="208" height="58" alt="profile for dontangg at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for dontangg at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
+</a>
+
