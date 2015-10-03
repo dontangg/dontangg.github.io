@@ -8,6 +8,8 @@ permalink: /:year/:month/:day/:title.html
 author: Don Wilson
 twitter_username: dontangg
 github_username:  dontangg
+gems:
+  - jekyll-feed
 
 # Build settings
 markdown: kramdown
