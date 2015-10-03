@@ -1,0 +1,231 @@
+﻿body {
+	background-color: #FAFAE6;
+	color: #49454A;
+	font-size: 14px;
+	font-family: Arial, Sans-Serif;
+}
+
+a, a:hover {
+	color: #49454A;
+	text-decoration: none;
+}
+
+#lbOverlay {
+	position: absolute;
+	z-index: 9999;
+	left: 0;
+	width: 100%;
+	background-color: #000;
+	cursor: pointer;
+}
+
+#lbCenter, #lbBottom {
+	position: absolute;
+	z-index: 9999;
+	left: 50%;
+	overflow: hidden;
+	background-color: #fff;
+}
+
+#lbCenter {
+	padding: 25px;
+}
+
+#lbBottom {
+	height: 20px;
+	border-top: solid 1px #49454A;
+	padding: 5px 25px;
+}
+
+#lbClose {
+	float: right;
+	cursor: pointer;
+	padding-left: 9px;
+	background-image: url('../images/left.gif');
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+.container {
+	width: 906px;
+	margin: 25px auto;
+}
+
+.green {
+	color: #B1D631;
+	font-weight: bold;
+}
+
+.orange {
+	color: #E69B02;
+}
+
+.siteBorder {
+	background-image: url('../images/siteBorder.jpg');
+	height: 600px;
+	width: 3px;
+	float: left;
+}
+
+.middle {
+	float: left;
+	width: 900px;
+}
+
+.portfolioName {
+	margin-top: 25px;
+	margin-left: 50px;
+}
+
+.portfolioName div {
+	font-size: 18px;
+	margin-left: 25px;
+}
+
+.mainContent {
+	height: 500px;
+}
+
+.footer {
+	text-align: center;
+}
+
+.footer a {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.aboutPicture {
+	float: left;
+	margin-right: 10px;
+}
+
+#breadcrumbWrapper {
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+#breadcrumb {
+	padding: 12px 10px 20px 50px;
+	display: none;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+#breadcrumb a {
+	padding: 3px;
+	margin: 3px;
+	
+}
+
+a#homeLink {
+	padding-left: 9px;
+	background-image: url('../images/left.gif');
+	background-repeat: no-repeat;
+	background-position: left;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+a#selectedCatName {
+	color: #E69B02;
+	font-size: 18px;
+}
+
+#categories {
+	margin: 0 auto;
+	font-size: 12px;
+	background-color: #FAFAE6; /* for ie anti-alias problem while changing opacity */
+}
+
+#categories td {
+	width: 150px;
+	padding: 20px 35px;
+	text-align: left;
+}
+
+#categories img {
+	margin: 5px 0;
+}
+
+.catName {
+	color: #E69B02;
+	font-weight: bold;
+}
+
+.category {
+	cursor: pointer;
+}
+
+#galleryTitle {
+	text-align: center;
+	padding-top: 20px;
+	display: none;
+	background-color: #FAFAE6; /* for ie anti-alias problem while changing opacity */
+}
+
+#gallery {
+	text-align: center;
+	margin: 5px 20px;
+	clear: both;
+	overflow: hidden;
+	height: 340px;
+	display: none;
+}
+
+#gallery img {
+	border: 0;
+	padding: 35px 28px;
+}
+
+#gallery a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#scrollerUp {
+	background-image: url('../images/up.gif');
+	border-bottom: solid 1px #000;
+}
+
+#scrollerDown {
+	background-image: url('../images/down.gif');
+	border-top: solid 1px #000;
+}
+
+#scrollerUp, #scrollerDown {
+	display: none;
+	margin: 0 auto;
+	width: 200px;
+	clear: both;
+	text-align: center;
+	height: 9px;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+/* Tool tip styles */
+.tip {
+	color: #fff;
+	width: 139px;
+	z-index: 13000;
+}
+ 
+.tip-title {
+	font-weight: bold;
+	font-size: 11px;
+	margin: 0;
+	color: #B1D631;
+	padding: 8px 8px 4px;
+	background: url('../images/bubble.png') top left;
+}
+ 
+.tip-text {
+	font-size: 11px;
+	padding: 4px 8px 8px;
+	background: url('../images/bubble.png') bottom right;
+}

@@ -1,0 +1,245 @@
+﻿
+/* Resets */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+:focus {
+	outline: 0;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+strong {
+	font-weight: bold;
+}
+em {
+	font-style: italic;
+}
+hr {
+	display: none;
+}
+.clear {
+	clear: both;
+}
+
+/* User Styles */
+body {
+	background: #192b33 url(../images/bg-top.jpg) repeat-x top;
+	font-family: "Lucida Sans Unicode", Arial, Sans-Serif;
+	font-size: 16px;
+	color: #192b33;
+}
+
+h1 {
+	font-family: Georgia, "Times New Roman", Serif;
+	font-size: 50px;
+	border-bottom: solid 5px #192b33;
+	display: inline;
+}
+h2 {
+	font-family: Georgia, "Times New Roman", Serif;
+	font-size: 28px;
+	display: inline;
+}
+a {
+	color: #192b33;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 860px;
+}
+
+.logo {
+	float: right;
+	margin-right: 35px;
+}
+
+.topMenu {
+	padding: 3px 3px 3px 35px;
+	line-height: 20px;
+	float: left;
+}
+.topMenu a {
+	color: #ffd933;
+	text-decoration: none;
+	margin-right: 20px;
+}
+.topMenu a.selectedItem {
+	color: #ff8000;
+}
+.topMenu a:hover {
+	color: #cccc52;
+}
+
+.shadowLeft, .shadowRight {
+	float: left;
+	width: 30px;
+	height: 227px;
+}
+.shadowLeft {
+	clear: both;
+	background-image: url(../images/shadow-left.jpg);
+}
+.shadowRight {
+	background-image: url(../images/shadow-right.jpg);
+}
+
+.outerContainer {
+	float: left;
+	background-color: #fff;
+	width: 760px;
+	padding: 15px;
+}
+.innerContainer {
+  position: relative;
+	border: solid 5px #8fb359;
+}
+
+.bottomMenuContainer {
+  position: relative;
+  height: 31px;
+  background-color: #8fb359;
+  z-index: 102;
+}
+.bottomMenu {
+	position: absolute;
+	background-color: #8fb359;
+	/*float: left;*/
+	width: 240px;
+	text-align: center;
+	overflow: hidden;
+	padding: 5px;
+	height: 18px;
+  z-index: 101;
+}
+
+.slideshowControls {
+	position: absolute;
+	z-index: 100;
+	top: 425px;
+	left:10px;
+}
+
+.slideshowControls img {
+	cursor: pointer;
+}
+
+.content {
+	background-color: #ffffd3;
+}
+
+.bmHeading {
+	font-size: 20px;
+	padding-bottom: 5px;
+	cursor: pointer;
+}
+.bmItems {
+	background-color: #cccc52;
+}
+.bmItems a.menuItem {
+	display: block;
+	padding: 4px;
+	color: #192b33;
+	text-decoration: none;
+	width: 232px;
+}
+.bmItems a.menuItem:hover {
+	background-color: #e6a629;
+	/*text-decoration: underline;*/
+}
+
+a.findLocations {
+	color: #192b33;
+	text-decoration: none;
+	padding-left: 24px;
+	background: transparent url(../images/find.jpg) no-repeat;
+}
+a.findLocations:hover {
+	text-decoration: underline;
+}
+
+.mainAd, .currentAd {
+	position: absolute;
+}
+
+.pageTitle {
+	margin-bottom: 20px;
+}
+
+.contentLeft {
+	float:left;
+	width: 354px;
+	border-right: solid 1px #192b33;
+	padding-right: 10px;
+}
+.contentRight {
+	float:left;
+	width: 355px;
+	padding-left: 10px;
+}
+
+.separator {
+	clear:both;
+	height:5px;
+	margin:15px;
+	background: transparent url(../images/separator.gif) no-repeat scroll center;
+}
+
+.pageEnder {
+	clear: both;
+	height: 19px;
+	padding-top: 25px;
+	background: transparent url(../images/page-ender.gif) no-repeat scroll center;
+}
+
+.buyGiftCard {
+	color: #192b33;
+	text-decoration: none;
+	padding-left: 28px;
+	padding-bottom: 2px;
+	background: transparent url(../images/shopping-cart.gif) no-repeat;
+	margin-left: 2px;
+}
+.buyGiftCard:hover {
+	text-decoration: underline;
+}
+
+
+.checkBalance {
+	color: #192b33;
+	text-decoration: none;
+	padding-left: 28px;
+	padding-bottom: 3px;
+	background: transparent url(../images/check.gif) no-repeat;
+	margin-left: 2px;
+}
+.checkBalance:hover {
+	text-decoration: underline;
+}

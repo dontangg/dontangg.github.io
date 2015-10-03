@@ -1,0 +1,113 @@
+﻿html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+:focus { outline: 0; }
+ol, ul { list-style: none; }
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: normal; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+strong { font-weight: bold; }
+em { font-style: italic; }
+a { text-decoration: none; }
+html, body { height: 100%; }
+body { font-family: "Lucida Sans Unicode" , Helvetica, Arial, Sans-Serif; font-size: 14px; }
+h2 { font-size: 25px; }
+p { font-size: 16px; line-height: 24px; }
+.navigation a { padding: 10px; }
+.clear { clear: both; }
+#scrollingWrapper { height: 100%; }
+.wrapper { margin: 0 auto; width: 800px; }
+.navigation { padding-top: 2px; height: 18px; }
+.image { float: left; padding: 5px; background-color: #fff; margin: 0 20px 20px 0; width: 170px; height: 135px; }
+.styler { position: fixed; top: 0; right: 0; margin: 10px 20px; text-align: right; }
+.styler div { text-decoration: underline; font-weight: bold; }
+#container1, #container2, #container3 { margin-bottom: 300px; }
+body { background-color: #333; color: #ccc; }
+.styler a { color: #fff; }
+#container1 { background: transparent url(../images/home/bgFall.png) repeat-x; min-height: 100%; }
+#container1 .navigation { text-align: center; }
+#container1 .navigation a { color: #EA910C; }
+#container1 .navigation a:hover { color: #ccc; }
+#container1 a.navLink1 { padding-left: 30px; background: transparent url(../images/home/navLeftTriangleFall.png) no-repeat scroll center left; }
+#container1 a.navLink4 { padding-right: 30px; background: transparent url(../images/home/navRightTriangleFall.png) no-repeat scroll center right; }
+#container1 div.top { height: 310px; margin-top: 40px; }
+#container1 div.logo { float: left; width: 350px; }
+#container1 div.logo h1 { background: transparent url(../images/home/logoFall.png) no-repeat scroll 50px; height: 180px; margin-top: 25px; }
+#container1 div.logo h1 span { display: none; }
+#container1 div.top a { color: #EA910C; }
+#container1 div.top a:hover { color: #fff; }
+#container1 div.welcome { margin-left: 350px; }
+#container1 div.welcome h2 { background: transparent url(../images/home/WelcomeFall.png) no-repeat; height: 40px; margin-bottom: 20px; }
+#container1 div.welcome h2 span { display: none; }
+#container1 div.bottom { color: #fff; padding: 15px 15px 25px; }
+#container1 div.bottom h2 { margin-bottom: 20px; margin-left: 10px; color: #333; }
+#container1 div.featured { float: left; width: 440px; }
+#container1 .featured .image { cursor: pointer; }
+#container1 .featured .image span { display: none; }
+#container1 .featured .image img, #container3 .works .image img { width: 170px; }
+#container1 div.tweets { margin-left: 440px; }
+#container1 div.tweetContainer { background-color: #bf770a; padding: 15px; color: #000; height: 280px; }
+#container1 div.tweetContainer li { clear: right; }
+#container1 div.tweetContainer li a { color: #000; width: 70px; margin-bottom: 15px; text-transform: capitalize; font-size: 12px; }
+#container1 div.tweetContainer li a:hover { color: #e1e1e1; }
+#container1 div.tweetContainer li div { float: right; width: 210px; color: #e1e1e1; margin-bottom: 10px; padding-left: 15px; }
+#container2 div.navigation { padding-left: 15px; }
+#container2 div.navigation a { color: #000; }
+#container2 div.navigation a:hover { color: #fff; }
+#container2 a.navLink1 { padding-left: 30px; background: transparent url(../images/about/navLeftTriangleFall.png) no-repeat scroll center left; }
+#container2 a.navLink4 { padding-right: 30px; background: transparent url(../images/about/navRightTriangleFall.png) no-repeat scroll center right; }
+#container2 .outer { background: transparent url(../images/about/bgFall.png) repeat-y; }
+#container2 div.aboutLeft { padding: 0 25px; float: left; width: 360px; }
+#container2 div.aboutLeft h2 { background: transparent url(../images/about/AboutMeFall.png) no-repeat; height: 40px; margin: 50px 10px 20px; }
+#container2 div.aboutLeft h2 span { display: none; }
+#container2 .aboutImage { background-color: #fff; padding: 5px; width: 350px; }
+#container2 .aboutRight { margin-left: 410px; padding: 70px 0 0 25px; }
+#container2 .aboutRight h2 { color: #d34302; margin-top: 30px; margin-bottom: 10px; }
+#container2 .aboutRight hr { color: #D34302; background-color: #D34302; border: 0; height: 1px; margin-top: 15px; }
+#container2 .resumeLeft { padding: 0 25px; float: left; width: 360px; }
+#container2 .resumeLeft h2 { background: transparent url(../images/about/ResumeFall.png) no-repeat; height: 40px; margin: 0 10px 0; }
+#container2 .resumeLeft h2 span { display: none; }
+#container2 .resumeLeft a { color: #000; margin-left: 22px; }
+#container2 .resumeLeft a:hover { color: #FFF; }
+#container2 .resumeRight { margin-left: 410px; padding: 0 25px; }
+#container2 .resumeRight h2 { color: #d34302; margin-top: 30px; margin-bottom: 10px; }
+#container2 .job { font-size: 16px; margin-bottom: 20px; }
+#container2 .companyName { font-style: italic; }
+#container2 .dates { float: right; }
+#container2 .jobDescription { padding-top: 8px; font-size: 14px; line-height: 20px; }
+#container2 .education { font-size: 14px; line-height: 20px; padding-bottom: 20px; }
+#container3 { background: transparent url(../images/work/bgFall.png) repeat-x; }
+#container3 .navigation { text-align: center; padding-top: 5px; }
+#container3 .navigation a { color: #fff; }
+#container3 .navigation a:hover { color: #000; }
+#container3 a.navLink1 { padding-left: 30px; background: transparent url(../images/work/navLeftTriangleFall.png) no-repeat scroll center left; }
+#container3 a.navLink4 { padding-right: 30px; background: transparent url(../images/work/navRightTriangleFall.png) no-repeat scroll center right; }
+#container3 .works h2 { background: transparent url(../images/work/MyWorkFall.png) no-repeat; height: 40px; margin: 30px 0 20px 10px; }
+#container3 .works h2 span { display: none; }
+#container3 .works .image { cursor: pointer; }
+#container3 .works .image span { display: none; }
+#workDialog img { float: left; margin: 0 10px 10px 0; width: 300px; }
+#workDialog #workTitle { text-align: center; clear: both; color: #C49F00; }
+#workDialog #workDescription { line-height: 20px; }
+#workDialog #workDescription a { color: #C49F00; text-decoration: underline; }
+.ui-dialog-container { background-color: #333; }
+.ui-dialog-titlebar { background: transparent url(../images/work/dialogBgGradientFall.png) repeat-x; cursor: default; height: 31px; }
+.ui-dialog-titlebar-close { width: 19px; height: 19px; background: transparent url(../images/work/XFall.png) no-repeat; position: absolute; top: 6px; right: 7px; cursor: pointer; }
+.ui-dialog-titlebar-close span { display: none; }
+.ui-dialog-title { margin-left: 5px; color: #333; font-weight: bold; position: relative; top: 7px; left: 10px; }
+.ui-dialog-content { margin: 15px; }
+#container4 { height: 100%; overflow: hidden; }
+#container4 .wrapper { height: 100%; }
+#container4 div.navigation { margin-left: 50px; }
+#container4 div.navigation a { color: #F54142; }
+#container4 div.navigation a:hover { color: #ccc; }
+#container4 a.navLink1 { padding-left: 30px; background: transparent url(../images/contact/navLeftTriangleFall.jpg) no-repeat scroll center left; }
+#container4 a.navLink4 { padding-right: 30px; background: transparent url(../images/contact/navRightTriangleFall.jpg) no-repeat scroll center right; }
+#container4 div.left { float: left; width: 500px; }
+#container4 div.left h2 { background: transparent url(../images/contact/ContactDark.jpg) no-repeat; height: 40px; margin: 50px 0 20px; }
+#container4 div.left h2 span { display: none; }
+#container4 label { float: left; clear: left; width: 100px; text-align: right; display: block; padding-right: 4px; margin: 3px; }
+#container4 input.textInput, #container4 textarea { float: left; padding: 2px; margin: 2px; width: 250px; border: solid 1px #000; font-size: 90%; background-color: #666; color: #fff; }
+#container4 input:focus, #container4 textarea:focus { border-color: #f54242; }
+#container4 input.submit { clear: both; float: left; background-color: #666666; border: 0; color: #ccc; font-size: 16px; width: 70px; margin-left: 115px; margin-top: 15px; padding: 5px 10px; cursor: pointer; border: solid 1px #000; }
+#container4 div.right { background: transparent url(../images/contact/bgGradient.png) repeat-y; color: #333; line-height: 20px; margin-left: 500px; min-height: 100%; }
+#container4 div.right div { padding: 0 15px; margin-bottom: 10px; }

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Don's Caf&eacute; - Restaurant Template</title>
+	<link href="styles/main.css" rel="stylesheet" type="text/css" />
+	
+  <meta name="description" content="A nice restaurant website template with a cool dynamic javascript menu made using jQuery.  Includes the psd, html, css, javascript, and instructions" />
+	<meta name="keywords" content="retaurant, site template, template, html, menu, breakfast, lunch, dinner, dessert, beverages, food, jQuery" />
+	
+	<script src="javascript/mootools-1.2-core-yc.js" type="text/javascript"></script>
+	<script src="javascript/menu.js" type="text/javascript"></script>
+	<script type="text/javascript" src="javascript/adControl.js"></script>
+	
+</head>
+<body>
+<div class="wrapper">
+
+	<img src="images/logo.jpg" alt="My Restaurant" class="logo" />
+
+	<div class="topMenu">
+		<a href="index.html" class="selectedItem">Home</a>
+		<a href="#">Order Online</a>
+		<a href="gift_cards.html">Gift Cards</a>
+		<a href="#">About</a>
+	</div>
+
+	<div class="clear"></div>
+	<div class="shadowLeft"></div>
+	<div class="outerContainer" style="margin-bottom: 50px;">
+		<div class="innerContainer">
+			<div class="slideshowControls">
+				<img id="prevAd" src="images/left-arrow.gif" alt="Previous" title="Previous" />
+				<img id="nextAd" src="images/right-arrow.gif" alt="Next" title="Next" />
+			</div>
+			<div class="content" style="height:457px;">
+				<img class="mainAd" src="images/dessertAd.jpg" alt="Mouth-Watering Caramel Crunch: Delicious caramel crunch dessert square with strawberries." />
+				<img class="mainAd" style="visibility:hidden" src="images/breakfastAd.jpg" alt="Never Ending Breakfast Plate: A wide variety of breakfast foods that will keep you going all day." />
+			</div>
+			<div class="bottomMenuContainer">
+				<div class="bottomMenu" id="test">
+					<div class="bmHeading">Menu</div>
+					<div class="bmItems">
+						<a class="menuItem" href="breakfast_menu.html">Breakfast</a>
+						<a class="menuItem" href="lunch_menu.html">Lunch</a>
+						<a class="menuItem" href="dinner_menu.html">Dinner</a>
+						<a class="menuItem" href="dessert_menu.html">Dessert</a>
+					</div>
+				</div>
+				<div class="bottomMenu" style='left:250px'>
+					<div class="bmHeading">Locations</div>
+					<div class="bmItems" style="padding:5px;">
+						<div style="margin-bottom:5px;">Enter your zip code:</div>
+						<input type="text" size="6" style="font-size:16px;" />
+						<a href="#" class="findLocations">Find</a>
+						
+					</div>
+				</div>
+				<div class="bottomMenu" style='left:500px'>
+					<div class="bmHeading">Jobs</div>
+					<div class="bmItems">
+						<a class="menuItem" href="#">Hourly</a>
+						<a class="menuItem" href="#">Management</a>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="shadowRight"></div>
+
+
+</div>
+
+	<!-- Stuff for every template that I have -->
+	<style type="text/css">
+		#envatoBar { position:fixed; bottom:0; z-index:102; background: #f1f1f1 url(/images/envatobar_back.jpg) repeat-x scroll 0 0; border-top: solid 1px #666; width: 100%; color: #105080; padding: 8px 10px; font-size: 16px; line-height: 22px; }
+		#envatoBar a { color: #105080; background: transparent url(/images/link_arrow.png) no-repeat scroll left; padding: 0 20px; }
+		#envatoBar-right { float:right; text-align:right; }
+		#envatoBar-left { float:left; }
+	</style>
+	<div id="envatoBar">
+	
+		<div id="envatoBar-right">
+			<a href="http://themeforest.net/item/dons-cafe/18253?ref=dontangg">This template is for sale on ThemeForest</a>
+			<a href="http://themeforest.net/user/dontangg/portfolio?ref=dontangg">My ThemeForest Portfolio</a>
+		</div>
+		<div id="envatoBar-left"><a href="/">Don Wilson's Portfolio</a></div>
+		
+	</div>
+	
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript" src="/scripts/analytics.js" />
+  
+</body>
+</html>
